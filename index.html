@@ -1,0 +1,466 @@
+
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <?php include 'head.php';?>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="win.css">
+   </head>
+   <body style="background-color:#f7f8ff">
+      
+      <div id="header" class="appHeader1">
+         <div class="left">
+            <a href="game" onClick="goBack();" class="icon goBack"> <img  src="./images/icons8-arrow-50.png" class="back"> </a>
+         </div>
+         <div style="font-size:25px; font-weight:500" class="pageTitle"><img src="/images/my-removebg-preview.png"></div>
+         <div class="right ">
+            <a href="help" class="icon goBack"> <img  src="images/icons/headphone.png" class="back"> </a>
+         </div>
+      </div>
+      <!-- App Header -->
+      
+      <div class="headers">
+         BIGWIN
+     </div>
+      <div class="headban">
+         
+         <div class="walletbox1">
+             
+            <div class="box">
+                
+                <div class="blnc">
+                    <div class="blnc-box">
+                        
+                    <div class="bs">
+                        
+                        
+                        <div>
+                            INR  <span style="margin-left:14px">: </span> <span id="trx_balance"  >3,573.10</span><a href="javascript:void(0);" onClick="reloadbtn(<?php echo $userid;?>);"><img class="walletimg1" id="spin-image" src=></a>
+                            
+                        </div>
+                    </div>
+                        
+                         
+                          
+                    </div>
+                    <div style="text-align:center;" class="blt">
+                        <img class="wallet" src="images/wlt.png"> 
+                        <p style="color:#cacaca; font-size:14px; font-weight:400;">Wallet Balance</p>
+                        
+                     </div>
+                    
+                </div>
+                
+                
+               
+                  
+               
+            </div>
+         </div>
+         
+         
+         <div class="walletbox">
+             
+             
+            <div class="box">
+               <div class="layout">
+                  
+                  <div class="col-6 text-center">
+                     <a class="btns btn" style="background-color: red"; class="ok-button" onclick="showPopup()" >Withdraw</a>
+                  </div>
+                  <div  class="col-6 text-center">  <a   href="Deposit.html" class="btnss btn"> Deposit</a></div>
+               </div>
+               <p></p>
+            </div>
+         </div>
+         <div class="infobox">
+            <div  class="row underinfo">
+               <div class="layout">
+                  <i style="color:#ed6a0c;font-size:20px;margin-right:10px;    margin-top: 4px;" class="fa fa-volume-up left"></i>
+                  <marquee style="color:black;font-weight:600;margin-top: 4px;"> "Master the market by predicting the right color trends and watch your profits soar!""Stay ahead of the curve—every color choice could be your next big win!"
+                     "Strategize, trade, and let your color instincts lead you to victory!"
+
+"Anticipate the shifts, place your bets, and turn colors into cash!"
+                  </marquee>
+                  <img src="images/dtl.png">
+               </div>
+            </div>
+         </div>
+         <div class="infobox">
+            <!-- Existing infobox content -->
+         </div>
+         
+         <!-- Timer Container -->
+         <div class="timeebox">
+            <p>Time Remaining:</p>
+            <div id="timeer">Loading...</div>
+        </div>
+         
+    
+         <div class="uppertbox">
+            <div class="timebox">
+               
+               
+               <ul  class="nav nav-tabs1 size4">
+                  <li class="nav-item1"> 
+                     <a style=" display: grid;line-height:5px" class="nav-link1 on-click" onclick="showPopup()">
+                     <img style="height:40px;padding-left:8px" src="images/time-5d4e96a3.png">
+                     <span style="color:#b2b2b2;padding: 5px;"  >Wingo</span>
+                     <span style="color:#b2b2b2;padding: 5px;">30 sec</span>
+                     </a> 
+                  </li>
+                  <li class="nav-item1" style="    height: 100px;
+    background: linear-gradient(180deg,#ff8080 0%,rgba(255,128,128,0) 100%);border-radius: 10px;"> 
+                     <a style=" display: grid;line-height:5px" class="nav-link1 on-button" onclick="showPopup()">
+                     <img style="height:40px;padding-left:7px" src="images/time_a-f83ed4c7.png">
+                     <span style="color:red;padding: 5px;" >Wingo</span>
+                     <span style="color:red; padding: 5px;">1 min</span>
+                     </a> 
+                  </li>
+                  <li class="nav-item1"> 
+                     <a style=" display: grid;line-height:5px" class="nav-link1 on-button" onclick="showPopup()"> 
+                     <img style="height:40px;padding-left:11px" src="images/time-5d4e96a3.png">
+                     <span style="color:#b2b2b2; padding: 5px;" >Wingo</span>
+                     <span style="color:#b2b2b2; padding: 5px;">3 min</span>
+                     </a> 
+                  </li>
+                  <li class="nav-item1"> 
+                     <a style=" display: grid;line-height:5px" class="nav-link1 on-button" onclick="showPopup()">
+                     <img style="height:40px;padding-left:11px" src="images/time-5d4e96a3.png">
+                     <span style="color:#b2b2b2; padding: 5px;" >Wingo</span>
+                     <span style="color:#b2b2b2; padding: 5px;">5 min</span>
+                     </a> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      
+      
+      
+      <div class="bet">
+         <div class="box">
+            <div class="btn_center">
+               <button type="button"  class="back_one gbutton ok-button" onclick="showPopup()" onClick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)','button','Green');">Green</button>
+               <button type="button" class="back_two gbutton ok-button" onclick="showPopup()" onClick="betbutton('linear-gradient(90deg,#b658fe 0%,#cd74ff 100%)','button','Violet');">Violet</button>
+               <button type="button" class="back_three gbutton ok-button" onclick="showPopup()" onClick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)','button','Red');">Red</button>
+            </div>
+         </div>
+         <div class="containers">
+            <div class="button-wrapper">
+              <button
+                class="btn-0 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)', 'button', '0');"
+              >
+                0
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-1 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)', 'button', '1');"
+              >
+                1
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-2 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)', 'button', '2');"
+              >
+                2
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-3 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)', 'button', '3');"
+              >
+                3
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-4  ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)', 'button', '4');"
+              >
+                4
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-5 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)', 'button', '5');"
+              >
+                5
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-6 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)', 'button', '6');"
+              >
+                6
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-7 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)', 'button', '7');"
+              >
+                7
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-8 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#fc5050 0%,#ff646c 100%)', 'button', '8');"
+              >
+                8
+              </button>
+            </div>
+            <div class="button-wrapper">
+              <button
+                class="btn-9 ok-button"
+                onclick="showPopup()"
+                onclick="betbutton('linear-gradient(90deg,#3faa70 0%,#47ba7c 100%)', 'button', '9');"
+              >
+                9
+              </button>
+            </div>
+          </div>
+          
+            <div> <img style="width: 100%;" src="images/randomimg.png"></div>
+         <div class="btn_center mt-1">
+              <button type="button" style="background-color: #FEAA57;" class="back_big gbutton ok-button" onclick="showPopup()" >BIG</button>
+               <button type="button" style="background-color: #6EA8FA;" class="back_small gbutton ok-button" onclick="showPopup()" >SMALL</button> 
+               
+            </div>  
+         </div>
+      </div>
+      <ul class="nav nav-tabs2 size3" id="myTab3" role="tablist">
+         <li class="nav-item2"> 
+            <a class="nav-link2 active ok-button" onclick="showPopup()" id="home-tab3" data-toggle="tab" href="#parity" role="tab" onClick="tabname('parity');getResultbyCategory('parity','parity');">Game Record</a> 
+         </li>
+         <li class="nav-item2"> 
+            <a class="nav-link2 ok-buttton"  onclick="showPopup()" id="chart-tab3"  data-toggle="tab" href="#bcone" role="tab" onClick="getResultbyCategory('bcone','bcone');">Chat tren</a>
+         </li>
+         <li class="nav-item2"> 
+            <a class="nav-link2 ok-button" onclick="showPopup()" id="profile-tab3" data-toggle="tab" href="#sapre" role="tab" onClick="getResultbyCategory('sapre','sapre');">My Game Record</a>
+         </li>
+      </ul>
+      <div>
+          
+         
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Popup Content -->
+    <div class="popup" id="popup">
+      <button class="close-btn" onclick="closePopup()">X</button>
+      <p>
+        You are still not yet complete the first deposit. Kindly complete it
+        first.
+      </p>
+    </div>
+          
+   
+
+         <!--=====================game area end============================-->
+         <div class="mt-1 pb-5">
+            <div class="tab-content" id="myTabContent">
+               <div class="tab-pane fade active show" id="parity" role="tabpanel"></div>
+                <div class="tab-pane fade show" id="bcone" role="tabpanel"></div>
+               <div class="tab-pane fade show" id="sapre" role="tabpanel"></div>
+            </div>
+         </div>
+         
+         
+      </div>
+      <!-- appCapsule -->
+     <div  id="payment" class="modal fadeIn" role="dialog">
+         <div   class="modal-dialog" role="document">
+            <div style="border-top-left-radius: 20px;
+               border-top-right-radius: 20px;overflow: hidden;" class="modal-content ">
+               <div class="modal-header paymentheader" id="paymenttitle">
+                  <h4 class="modal-title" >Win Go 5min</h4>
+                  <span id="chn" class="paymentcolor" style="background:white;border-radius:5px; padding:5px 80px"> </span>
+               </div>
+               <div style="display: flex; justify-content: space-between; width: 100%;margin-top:-43px;">
+                  <div style="width: 50%; height: 50px; background: linear-gradient(10deg, #fff 50%,transparent 0);"></div>
+                  <div style="width: 50%; height:50px; background: linear-gradient(-10deg, #fff 50%,transparent 0);"></div>
+               </div>
+               <form action="#" method="post" id="bettingForm" autocomplete="off">
+                  <div style="margin:0px -18px -20px -18px" class="modal-body" id="loadform">
+                     <!---   ---->
+                     <div class="container mt-1">
+                        <p class="left-text">Currency</p>
+                     <div class="right-group">
+                      <label class="btn1 selected" id="trxLabel" >
+                        <input class="contract" type="radio" name="curradio" value="trx" checked onchange="changeLabelColor('trxLabel')">TRX
+                      </label>
+                      <label class="btn1" id="usdtLabel">
+                        <input class="contract" type="radio" name="curradio" value="usdt"  onchange="changeLabelColor('usdtLabel')">USDT
+                      </label>
+                    </div>
+                    </div>
+<!---->
+                     <div class="container mt-1">
+                        <p class="left-text">Money</p>
+                        <div class="right-group">
+                           <label class=" btn1 btn-secondary" onClick="contract(10);">
+                           <input class="contract" type="radio" name="optradio" id="hoursofoperation" value="1" checked >1</label>
+                           <label class=" btn1 btn-secondary" onClick="contract(100);">
+                           <input type="radio" class="contract" name="optradio" id="hoursofoperation" value="100">100</label>
+                           <label class=" btn1 btn-secondary" onClick="contract(1000);">
+                           <input type="radio" class="contract" name="optradio" id="hoursofoperation" value="1000">1000</label>
+                        </div>
+                     </div>
+                     <div class="container">
+                        <p class="left-text">Multiply</p>
+                        <div class="def-number-input number-input ">
+                           <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown(); addvalue();" class="minus"></button>
+                           <input class="quantity" min="1" name="amount" id="amount" value="1" type="number" onKeyUp="addvalue();">
+                           <button type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp(); addvalue();" class="plus"></button>
+                        </div>
+                     </div>
+                     <div style="margin: 10px 0px" class="container">
+                        <p style="color:white" class="left-text">.</p>
+                        <div class="right-group">
+                           <label class="  btn1 btn-secondary">
+                           <input type="radio" name="browser" onclick="myFunction(this.value); addvalue();" value="3">x3<br>
+                           </label>
+                           <label class="  btn1 btn-secondary">
+                           <input type="radio" name="browser" onclick="myFunction(this.value); addvalue();" value="5">x5<br>
+                           </label>
+                           <label class="  btn1 btn-secondary">
+                           <input type="radio" name="browser" onclick="myFunction(this.value); addvalue();" value="10">x10<br>
+                           </label>
+                           <label class="  btn1 btn-secondary">
+                           <input type="radio" name="browser" onclick="myFunction(this.value); addvalue();" value="20">x20<br>
+                           </label>
+                           <script>
+                              function myFunction(browser) {
+                                document.getElementById("amount").value = browser;
+                              }
+                           </script>
+                        </div>
+                     </div>
+                     <input type="hidden" id="contractmoney" name="contractmoney" value="1">   
+                     <input type="hidden" name="userid" id="userid" class="form-control" value="<?php echo $userid;?>">
+                     <input type="hidden" name="type" id="type" class="form-control" value="">
+                     <input type="hidden" name="value" id="value" class="form-control" value="">
+                     <input type="hidden" name="counter" id="counter" class="form-control" >
+                     <input type="hidden" name="inputgameid" id="inputgameid" class="form-control" value="<?php echo sprintf("%03d",gameid($con));?>"> 
+                     <div class="custom-control custom-checkbox m-2">
+                        <input type="checkbox" checked class="custom-control-input" id="presalerule" name="presalerule">
+                        <label class="custom-control-label text-muted" for="presalerule">I Agree <a data-toggle="modal" href="#privacy" data-backdrop="static" data-keyboard="false">Presale Rule</a></label>
+                     </div>
+                     <input type="hidden" name="finalamount" id="finalamount" value="0.1">
+                     <div class="parent">
+                        <div class="child paymentheader">
+                           <button  data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div  class="child1 paymentheader">
+                           <button  id="type" type="submit">Confirm</span></button>
+                        </div>
+                     </div>
+                     <!------>
+                  </div>
+                  <input type="hidden" name="tab" id="tab" value="parity">
+               </form>
+            </div>
+         </div>
+      </div>
+     
+      
+      
+      
+      
+      
+      <div id="alert" class="modal" role="dialog" >
+         <div  class="modal-dialog  regLog" role="document">
+            <div class="modal-content regContent">
+               <div class="modal-body" >
+                  <div class="text-center" id="alertmessage">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="loader" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-content" style="background:transparent; border:none;">
+               <div class="text-center pb-1">
+                  <a type="button" id="closbtnloader" data-dismiss="modal">
+                     <div class="spinner-grow text-success"></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <table>
+         <thead>
+             <tr>
+                 <th>Period</th>
+                 <th>Number</th>
+                 <th>Big Small</th>
+                 <th>Color</th>
+             </tr>
+         </thead>
+         <tbody id="table-body">
+             <!-- Rows will be generated by JavaScript -->
+         </tbody>
+     </table>
+ 
+     <div class="pagination-buttons">
+         <button id="prev-btn" class="arrow">&#9664;</button> <!-- Left arrow -->
+         <span id="page-count" class="page-count">Page 1/30</span>
+         <button id="next-btn" class="arrow">&#9654;</button> <!-- Right arrow -->
+     </div>
+ 
+      
+       <script>
+        // Initially set the style for the default checked label
+        // document.getElementById('trxLabel').classList.add('selected');
+
+        function changeLabelColor(labelId) {
+            var labels = document.getElementsByClassName("btn1");
+            for (var i = 0; i < labels.length; i++) {
+                labels[i].classList.remove("selected");
+            }
+
+            var selectedLabel = document.getElementById(labelId);
+            selectedLabel.classList.add("selected");
+        }
+    </script>
+  <!-- Jquery --> 
+      <script src="/assets/js/lib/jquery-3.4.1.min.js"></script> 
+      <!-- Bootstrap--> 
+      <script src="/assets/js/lib/popper.min.js"></script> 
+      <script src="/assets/js/lib/bootstrap.min.js"></script> 
+      <!-- Owl Carousel --> 
+      <script src="/assets/js/plugins/owl.carousel.min.js"></script> 
+      <!-- Main Js File --> 
+      <script src="/assets/js/app.js"></script>
+      <script src="/assets/js/betting.js"></script>
+      
+      
+    <script src="win.js">
+    </script>
